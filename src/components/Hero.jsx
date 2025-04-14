@@ -6,7 +6,7 @@ import barpic3 from '../assets/images/barpic3.jpg';
 
 const Hero = () => {
   return (
-    <section className="min-h-[50vh] flex flex-col rounded-2xl md:flex-row items-center justify-between px-8 py-16 bg-gradient-to-br from-zu-pink via-[#b24863] to-zu-green text-white w-11/12 mx-auto relative overflow-hidden">
+    <section className="min-h-[50vh] flex flex-col rounded-2xl md:flex-row items-center justify-between px-8 py-16 bg-gradient-to-br from-zu-pink via-[#b24863] to-zu-green text-white w-5/6 mx-auto relative overflow-hidden">
       {/* Glass effect background */}
       <div className="absolute inset-0 bg-white/20 backdrop-blur-lg rounded-2xl"></div>
 
