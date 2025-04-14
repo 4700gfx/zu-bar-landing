@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+
+body{
+
+}
+
+@font-face {
+  font-family: Poppins-Black, sans-serif;
+  src: url(../public/brand-fonts/body/Poppins-Black.ttf);
+}
+
+.body-text{
+  font-family: Poppins-Black, sans-serif;
+}
+
+
+@font-face {
+  font-family: "Havana Sunset";
+  src: url(../public/brand-fonts/main-heading/HavanaSunset\ Sans\ Filled.ttf)
+}
+
+.main-heading{
+  font-family: "Havana Sunset";
+}
+
+
+@font-face {
+  font-family: "Havana Sub";
+  src: url(../public/brand-fonts/subheading/HavanaSunset\ Script.ttf);
+}
+
+.sub-heading{
+  font-family: "Havana Sub";
+  
+}
+
+@theme{
+  --color-zu-pink: #ED0077;
+  --color-zu-green: #348C19;
+  --color-zu-lime: #B3FF79;
+  --color-zu-neon: #2FFF00;
+  --color-zu-black: #080000;
+}
