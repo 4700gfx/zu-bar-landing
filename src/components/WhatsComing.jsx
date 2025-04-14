@@ -70,24 +70,36 @@ const WhatsComing = () => {
       {/* Countdown Timer */}
       <div className='text-center mb-12'>
         <h4 className='text-2xl font-semibold text-zu-green'>Countdown to Launch</h4>
-        <p className='text-6xl main-heading text-zu-pink mt-1'>
-          {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m : {timeLeft.seconds}s
-        </p>
+        <div className='flex justify-center items-center gap-4 mt-4 flex-wrap'>
+          {[
+            { label: 'Days', value: timeLeft.days },
+            { label: 'Hours', value: timeLeft.hours },
+            { label: 'Minutes', value: timeLeft.minutes },
+            { label: 'Seconds', value: timeLeft.seconds }
+          ].map((unit, index) => (
+            <div key={index} className='flex flex-col items-center'>
+              <div className='w-20 h-20 md:w-24 md:h-24 rounded-full main-heading bg-zu-pink text-white flex items-center justify-center text-2xl md:text-5xl font-bold shadow-md'>
+                {unit.value}
+              </div>
+              <span className='mt-2 text-zu-green font-medium text-sm md:text-base'>{unit.label}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Cards Section */}
-      <div className='flex flex-wrap justify-center gap-6'>
+      <div className='flex flex-wrap justify-center gap-4 md:gap-6'>
         {upcomingEvents.map((event, index) => (
-          <div key={index} className='bg-white max-w-md w-full rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300'>
+          <div key={index} className='bg-white max-w-sm w-full rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300'>
             <img 
               src={event.image} 
               alt={event.type} 
               className='w-full h-56 object-cover'
             />
             <div className='p-5'>
-              <h2 className='text-3xl main-heading font-bold text-zu-green'>{event.type}</h2>
-              <h3 className='text-4xl sub-heading text-zu-pink'>{event.subheading}</h3>
-              <p className='text-gray-700 body-text'>{event.text}</p>
+              <h2 className='text-2xl font-bold text-zu-green'>{event.type}</h2>
+              <h3 className='text-3xl sub-heading text-zu-pink'>{event.subheading}</h3>
+              <p className='text-gray-700 body-text mt-2'>{event.text}</p>
             </div>
           </div>
         ))}
