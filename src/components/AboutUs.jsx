@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutUsPic from '../assets/images/about-us-bar.jpg';
+import aboutUsPic from '../assets/images/barpic2.jpg';
 import aboutUsPic2 from '../assets/images/about-us-bar2.jpg';
 import aboutUsPic3 from '../assets/images/about-us-bar3.jpg';
 
