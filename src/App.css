@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 
-body{
-
+html {
+  scroll-behavior: smooth;
 }
+
 
 @font-face {
   font-family: Poppins-Black, sans-serif;

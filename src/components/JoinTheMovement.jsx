@@ -19,7 +19,7 @@ const JoinTheMovement = () => {
 
   return (
     <section className="flex flex-col py-10 w-11/12 mx-auto mb-10">
-      <h1 className="main-heading text-5xl text-zu-pink mx-auto mt-15 mb-10 text-center">
+      <h1 className="main-heading text-5xl text-zu-pink mx-auto mt-15 mb-10 text-center" id='join'>
         Join The Movement
       </h1>
 

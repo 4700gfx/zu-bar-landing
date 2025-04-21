@@ -60,7 +60,7 @@ const WhatsComing = () => {
   ]
 
   return (
-    <section className='w-11/12 mx-auto mt-15'>
+    <section className='w-11/12 mx-auto mt-15' id='coming'>
       {/* Heading Section */}
       <div className='flex flex-col items-center mb-6'>
         <h1 className='main-heading text-zu-green text-6xl text-center'>What's Coming</h1>
